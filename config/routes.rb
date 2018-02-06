@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :recipes
   get '/about', to: 'home#about', as: 'about'
   root to: 'home#index'
 
